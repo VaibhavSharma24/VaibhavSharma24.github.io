@@ -1,0 +1,318 @@
+*{
+ margin: 0%;
+ padding: 0%;
+ box-sizing: border-box;
+}
+html,body{
+ height: 100%;
+ width: 100%;
+}
+header>nav{
+    /*background-color: #090E16;*/
+    background-color: #37265b;
+    display: flex;
+    align-items: center;
+    height: 15vh;
+    padding: 20px;
+    color: black;
+}
+#left-nav{
+    color: rgb(255, 255, 255);
+    font-family: "poppins",sans-serif;
+    font-weight: 400;
+    font-size: 45px;
+    margin-left: 50px;
+}
+#right-nav{
+    width: 90vw;
+    display: flex;
+    justify-content: flex-end; 
+    margin-right: 50px;
+}
+#right-nav>a{
+    margin: 20px;
+    color: #fff;
+    font-family: "poppins",sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+}
+#right-nav>a:hover{
+    color: #a285e1;
+    font-size: 21px;
+    transition: ease-in-out;
+}
+#main{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #a285e1;
+}
+#main-left{
+    position: absolute;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1100px;
+    margin-left: 50px;
+    font-family: "poppins",sans-serif;
+    font-size: 30px;
+}
+#main-left>p{
+    margin-top: 13px;
+    margin-bottom: -10px;
+}
+#icons{
+    display: flex;
+    flex-direction: row;
+}
+#icons>i{
+margin: 10px;
+}
+#main-center{
+    position: absolute;
+    width: auto;
+   display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#main-center>img{
+margin-bottom: 120px;
+display: block;
+width: 450px;
+}
+#main-right{
+    position: absolute;
+    display: flex;
+    margin-left: 1100px;
+}
+#main-right>button{
+    font-size: 30px;
+    padding: 15px;
+    font-family: "poppins",sans-serif;
+    background-color: rgba(0, 0, 0, 0.694);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+}
+#main-right>button:hover{
+    background-color: white;
+    color: black;
+    font-size: 33px;
+    transition: 0.5s;
+}
+#main-2{
+    /*background-color: #37265b;*/
+    background-color: black;
+    position: relative;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+.myskills{
+    position: absolute;
+    color: #37265b;
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    font-size: 50px;
+    font-weight: 600;
+}
+.container{
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circular{
+text-align: center;
+
+}
+.progress{
+    position: relative;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progress::before{
+    content: "";
+    position: absolute;
+    height: 210px;
+    width: 210px;
+    border-radius: 50%;
+    background-color: black;
+}
+.progress-value{
+    position: absolute;
+    font-size: 50px;
+    font-weight: 600;
+    color: #a285e1;
+}
+.textt{
+    color:#37265b;
+    font-size: 50px;
+    font-weight: 500;
+    font-family: "poppins",sans-serif;
+    margin: 20px;
+}
+#main-3{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-color: white;
+}
+.about-left-rectangle{
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    margin-left: 110px;
+    margin-top: 150px;
+    border: 15px solid #a285e1;
+    border-radius: 10px;
+}
+.about-left-img{
+    height: 400px;
+    margin-top: 40px;
+    margin-left: 90px;
+    margin-top: 100px;
+    z-index: 99;
+    border-radius: 15px;
+}
+.about-right{
+    position: absolute;
+    display: flex;
+    width: inherit;
+    height: inherit;
+    justify-content: center;
+    align-items: center;
+}
+.about-right >h1{
+    font-size: 300px;
+    margin: 300px 0px 500px 520px;
+}
+#main-3 >p{
+    font-family: "ubuntu";
+    text-align: center;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 130vh;
+    width: 20vw;
+    color: #37265b;
+    margin-left: 75%;
+    line-height: 2;
+}
+#main-4{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-color: #a285e1;
+}
+.heading-projects{
+    font-family: "Nunito",sans-serif;
+    margin-top: 50px;
+    margin-left: 40rem;
+}
+.projects-grid{
+    width: 20rem;
+    margin: 10px;
+    gap: 30px;
+}
+.gridd{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    margin-left: -27rem;
+    margin-top: 10rem;
+}
+.projects-grid{
+    position: relative;
+}
+.projects-grid >img:hover{
+    cursor: pointer;
+}
+#main-5{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-color: black;
+}
+#main-5 > h1{
+    color: #a285e1;
+display: flex;
+position: absolute;
+justify-content: flex-end;
+align-items: center;
+width: inherit;
+font-size: 8rem;
+font-family: 'Trebuchet MS', sans-serif;
+margin-left: -150px;
+margin-top: 40px;
+}
+#main-5 > form{
+    border: #37265b solid 8px;
+}
+.contact-box{
+    position: absolute;
+width: inherit;
+height: 50vh;
+display: flex;
+align-items: center;
+justify-content: flex-end;
+margin-top: 8rem;
+}
+.contact-box > form{
+    width: 50rem;
+    height: 32rem;
+    border-left: #a285e1 solid;
+    border-top: #a285e1 solid;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20rem;
+}
+#nname{
+    border: none;
+    border-bottom: 2px solid #a285e1;
+    background-color: black;
+    width: 40rem;
+height: 4rem;
+color: white;
+margin: 15px;
+}
+.contact-box > form > input::placeholder{
+    color: aqua;
+}
+#buttonn{
+    background-color: black; 
+    color: white; 
+    border: 2px solid #a285e1;
+    font-size: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+}
+  
+#buttonn:hover {
+    background-color: #a285e1;
+    color: white;
+    transition: 0.5s;
+}
